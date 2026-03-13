@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>富泰貴金屬 - 匠心鑄誠，財富永續 | 永和高價收購黃金</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gold-gradient { background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c); }
+        .hero-section { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1589118949245-7d38baf380d6?auto=format&fit=crop&w=1350&q=80'); 
+            background-size: cover; background-position: center;
+        }
+        html { scroll-behavior: smooth; }
+        .calculator-input:focus { border-color: #b38728; outline: none; ring: 2px #b38728; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-black text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold gold-gradient bg-clip-text text-transparent">富泰貴金屬</h1>
+            <div class="hidden md:flex space-x-6 text-sm">
+                <a href="#about" class="hover:text-yellow-500 transition">經營理念</a>
+                <a href="#market" class="hover:text-yellow-500 transition">即時行情</a>
+                <a href="#calc" class="hover:text-yellow-500 transition">試算工具</a>
+                <a href="#contact" class="hover:text-yellow-500 transition">聯絡店址</a>
+            </div>
+            <a href="tel:0229218888" class="bg-yellow-600 px-4 py-2 rounded-full text-sm font-bold shadow-lg">02-2921-8888</a>
+        </div>
+    </nav>
+
+    <header class="hero-section h-[500px] flex items-center justify-center text-center text-white px-4">
+        <div>
+            <h2 class="text-5xl md:text-6xl font-bold mb-6 italic">匠心鑄誠，財富永續</h2>
+            <p class="text-xl md:text-2xl mb-8 text-yellow-500 font-bold tracking-widest">不扣重 ‧ 現場秤重 ‧ 專業鑑定</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="https://line.me/ti/p/~29218888" class="bg-[#00c300] text-white px-8 py-4 rounded-xl text-xl font-bold hover:scale-105 transition flex items-center justify-center">
+                    <i class="fab fa-line mr-2 text-2xl"></i> LINE 線上報價
+                </a>
+                <a href="#calc" class="bg-white text-black px-8 py-4 rounded-xl text-xl font-bold hover:bg-gray-100 transition">金價試算</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 bg-white px-6">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold mb-2">關於富泰</h3>
+                <p class="text-yellow-600 font-bold italic text-xl">「匠心鑄誠，財富永續」</p>
+            </div>
+            <div class="bg-gray-50 p-10 rounded-3xl border-l-8 border-yellow-600 shadow-xl leading-relaxed">
+                <p class="mb-6 text-lg">在富泰貴金屬，我們深知每一份交付背後，都承載著客戶對價值的託付與對未來的期待。因此，我們以<span class="font-bold text-yellow-700">「專業為本、誠信為先、創新為翼」</span>作為核心經營靈魂。</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-10">
+                    <div>
+                        <h4 class="font-bold text-yellow-700 mb-2 border-b-2 border-yellow-200 pb-1">誠信透明</h4>
+                        <p class="text-sm text-gray-600">堅持公開、公正的交易流程，確保每一克金屬的純度與價格皆經得起檢驗。</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-yellow-700 mb-2 border-b-2 border-yellow-200 pb-1">卓越專業</h4>
+                        <p class="text-sm text-gray-600">憑藉深厚產業經驗與尖端鑑定技術，提供精確市場洞察，助力客戶穩健佈局。</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-yellow-700 mb-2 border-b-2 border-yellow-200 pb-1">共創富足</h4>
+                        <p class="text-sm text-gray-600">「富」是財富增長，「泰」是心靈安泰。我們致力成為您最可靠的資產守護者。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="market" class="py-16 bg-gray-100 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-chart-line text-blue-600 mr-2"></i> 國際黃金行情
+                    </h3>
+                    <div class="bg-white p-4 rounded-2xl shadow-lg h-[400px]">
+                        <div class="tradingview-widget-container" style="height:100%;width:100%">
+                            <iframe src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_762ae&symbol=OANDA%3AXAUUSD&interval=D&hidesidetoolbar=1&symboledit=1&saveimage=1&toolbarbg=f1f3f6&studies=%5B%5D&theme=light&style=1&timezone=Etc%2FUTC&studies_overrides=%7B%7D&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=zh_TW" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="calc">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-calculator text-yellow-600 mr-2"></i> 收購金額試算
+                    </h3>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-yellow-500">
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-600 mb-2">收購單價 (台幣/每錢)</label>
+                                <input type="number" id="price_per_mace" placeholder="例如: 8500" class="calculator-input w-full p-3 border rounded-lg text-lg">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-600 mb-2">黃金總重量 (錢)</label>
+                                <input type="number" id="gold_weight" placeholder="輸入錢數" class="calculator-input w-full p-3 border rounded-lg text-lg">
+                            </div>
+                            <div class="bg-yellow-50 p-4 rounded-xl">
+                                <p class="text-sm text-gray-500 mb-1">預估總金額</p>
+                                <p class="text-3xl font-bold text-yellow-700">NT$ <span id="total_result">0</span></p>
+                            </div>
+                            <div class="text-xs text-gray-400 italic">
+                                計算公式：收購總價 = 重量 (錢) × 當日單價 (錢)<br>
+                                *本工具僅供參考，實際收購價格請以現場鑑定為準。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 container mx-auto">
+        <div class="flex flex-col md:flex-row bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div class="md:w-1/2 p-12">
+                <h3 class="text-3xl font-bold mb-8">聯絡資訊</h3>
+                <div class="space-y-6">
+                    <p class="flex items-center text-lg"><i class="fas fa-map-marker-alt text-red-600 mr-4"></i> 新北市永和區福和路306號</p>
+                    <p class="flex items-center text-lg"><i class="fas fa-phone-alt text-yellow-600 mr-4"></i> 02-2921-8888</p>
+                    <p class="flex items-center text-lg"><i class="fab fa-line text-green-600 mr-4 text-xl"></i> 29218888</p>
+                    <div class="mt-8 p-6 bg-gray-50 rounded-2xl">
+                        <h5 class="font-bold mb-2">營業時間</h5>
+                        <p>週一至週六：09:00 - 21:00</p>
+                        <p class="text-red-600 font-bold">週日：公休</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 h-[400px] md:h-auto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.688846387!2d121.5186633!3d25.0107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a99787e74921%3A0x637890b05b38a4f1!2zMjM05paw5YyX5biC5rC45ZKM5Y2A56aP5ZKM6LevMzA26Jmf!5e0!3m2!1szh-TW!2stw!4v1710000000000!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-500 py-10 text-center text-sm">
+        <p>© 2026 富泰貴金屬 | 匠心鑄誠，財富永續</p>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 flex flex-col space-y-4">
+        <a href="https://line.me/ti/p/~29218888" class="bg-[#00c300] w-14 h-14 rounded-full flex items-center justify-center text-white shadow-2xl"><i class="fab fa-line text-2xl"></i></a>
+        <a href="tel:0229218888" class="bg-yellow-600 w-14 h-14 rounded-full flex items-center justify-center text-white shadow-2xl"><i class="fas fa-phone"></i></a>
+    </div>
+
+    <script>
+        const priceInput = document.getElementById('price_per_mace');
+        const weightInput = document.getElementById('gold_weight');
+        const resultOutput = document.getElementById('total_result');
+
+        function calculate() {
+            const price = parseFloat(priceInput.value) || 0;
+            const weight = parseFloat(weightInput.value) || 0;
+            const total = Math.round(price * weight);
+            resultOutput.innerText = total.toLocaleString();
+        }
+
+        priceInput.addEventListener('input', calculate);
+        weightInput.addEventListener('input', calculate);
+    </script>
+
+</body>
+</html>
